@@ -15,6 +15,8 @@ namespace ProjektEins
         public ViktorControl()
         {
             InitializeComponent();
+
+            pictureBox1.DataBindings.Add("Left", hScrollBar1, "Value", true, DataSourceUpdateMode.OnPropertyChanged) ;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
