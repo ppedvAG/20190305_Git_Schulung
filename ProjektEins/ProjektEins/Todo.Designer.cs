@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.bt_todoSpeichern = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_todoTitel = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.rtbtodoBeschreibung = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_todoSpeichern
             // 
+            this.bt_todoSpeichern.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_todoSpeichern.AutoSize = true;
             this.bt_todoSpeichern.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.bt_todoSpeichern.Location = new System.Drawing.Point(724, 382);
+            this.bt_todoSpeichern.Location = new System.Drawing.Point(747, 398);
             this.bt_todoSpeichern.Margin = new System.Windows.Forms.Padding(2);
             this.bt_todoSpeichern.Name = "bt_todoSpeichern";
             this.bt_todoSpeichern.Size = new System.Drawing.Size(65, 23);
@@ -51,7 +52,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 28);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 4;
@@ -59,36 +60,49 @@
             // 
             // tb_todoTitel
             // 
-            this.tb_todoTitel.Location = new System.Drawing.Point(80, 25);
+            this.tb_todoTitel.Location = new System.Drawing.Point(36, 3);
             this.tb_todoTitel.Name = "tb_todoTitel";
             this.tb_todoTitel.Size = new System.Drawing.Size(364, 20);
             this.tb_todoTitel.TabIndex = 5;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // rtbtodoBeschreibung
             // 
-            this.rtbtodoBeschreibung.Location = new System.Drawing.Point(80, 51);
+            this.rtbtodoBeschreibung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbtodoBeschreibung.Location = new System.Drawing.Point(36, 29);
             this.rtbtodoBeschreibung.Name = "rtbtodoBeschreibung";
-            this.rtbtodoBeschreibung.Size = new System.Drawing.Size(697, 326);
+            this.rtbtodoBeschreibung.Size = new System.Drawing.Size(775, 364);
             this.rtbtodoBeschreibung.TabIndex = 7;
             this.rtbtodoBeschreibung.Text = "";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.rtbtodoBeschreibung, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tb_todoTitel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.bt_todoSpeichern, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(814, 423);
+            this.tableLayoutPanel1.TabIndex = 8;
             // 
             // Todo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.rtbtodoBeschreibung);
-            this.Controls.Add(this.tb_todoTitel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.bt_todoSpeichern);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Todo";
             this.Size = new System.Drawing.Size(814, 423);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -97,7 +111,7 @@
         private System.Windows.Forms.Button bt_todoSpeichern;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_todoTitel;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.RichTextBox rtbtodoBeschreibung;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
