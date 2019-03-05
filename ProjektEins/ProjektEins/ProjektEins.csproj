@@ -55,6 +55,12 @@
     <Compile Include="AndreControl.Designer.cs">
       <DependentUpon>AndreControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="BerndControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BerndControl.Designer.cs">
+      <DependentUpon>BerndControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </Compile>
     <EmbeddedResource Include="AndreControl.resx">
       <DependentUpon>AndreControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BerndControl.resx">
+      <DependentUpon>BerndControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

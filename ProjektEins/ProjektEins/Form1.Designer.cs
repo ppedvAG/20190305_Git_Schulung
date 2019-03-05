@@ -32,9 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.andreControl1 = new ProjektEins.AndreControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.berndControl1 = new ProjektEins.BerndControl();
             this.andreControl1 = new ProjektEins.AndreControl();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -54,6 +56,7 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -82,6 +85,16 @@
             this.tabPage1.Text = "André";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // andreControl1
+            // 
+            this.andreControl1.BackColor = System.Drawing.SystemColors.Window;
+            this.andreControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.andreControl1.Location = new System.Drawing.Point(2, 2);
+            this.andreControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.andreControl1.Name = "andreControl1";
+            this.andreControl1.Size = new System.Drawing.Size(588, 336);
+            this.andreControl1.TabIndex = 0;
+            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -99,6 +112,8 @@
             this.tabPage3.Controls.Add(this.bindingNavigator1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(592, 340);
             this.tabPage3.TabIndex = 2;
@@ -109,13 +124,16 @@
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Controls.Add(this.berndControl1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(592, 340);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Bernd";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // andreControl1
+            // berndControl1
             // 
             this.andreControl1.BackColor = System.Drawing.SystemColors.Window;
             this.andreControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -124,6 +142,12 @@
             this.andreControl1.Name = "andreControl1";
             this.andreControl1.Size = new System.Drawing.Size(588, 336);
             this.andreControl1.TabIndex = 0;
+            this.berndControl1.BackColor = System.Drawing.SystemColors.Window;
+            this.berndControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.berndControl1.Location = new System.Drawing.Point(0, 0);
+            this.berndControl1.Name = "berndControl1";
+            this.berndControl1.Size = new System.Drawing.Size(592, 340);
+            this.berndControl1.TabIndex = 0;
             // 
             // bindingNavigator1
             // 
@@ -265,6 +289,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -290,6 +315,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private BerndControl berndControl1;
     }
 }
 
