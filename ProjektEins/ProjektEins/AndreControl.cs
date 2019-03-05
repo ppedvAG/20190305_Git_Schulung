@@ -15,6 +15,7 @@ namespace ProjektEins
         public AndreControl()
         {
             InitializeComponent();
+            progressBar1.DataBindings.Add(nameof(ProgressBar.Value), trackBar1, nameof(TrackBar.Value), true, DataSourceUpdateMode.OnPropertyChanged);
         }
     }
 }
