@@ -2,6 +2,10 @@
 Imports System.Reflection
 Imports Contracts
 
+
+
+
+
 Public Class Form1
 
     Dim derMacher As IMachWas = Nothing
@@ -14,7 +18,7 @@ Public Class Form1
         ' Add any initialization after the InitializeComponent() call.
 
         'Dim filepath = "C:\Users\ar2\source\repos\DepInj.GUI\MachWas.Bernd\bin\Debug\netstandard2.0\MachWas.Bernd.dll"
-        Dim filepath = "C:\Users\ar2\source\repos\DepInj.GUI\MachWas.Viktor\bin\Debug\netstandard2.0\MachWas.Viktor.dll"
+        Dim filepath = "C:\Users\ar2\source\repos\ppedvAG\20190305_Git_Schulung\DepInj.GUI\MachWas.Bernd\bin\Debug\netstandard2.0\MachWas.Bernd.dll"
 
         Dim ass = Assembly.LoadFile(filepath)
         Dim target = ass.GetTypes().FirstOrDefault(Function(p) GetType(IMachWas).IsAssignableFrom(p))
