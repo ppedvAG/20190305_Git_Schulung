@@ -19,7 +19,7 @@ namespace ProjektEins
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            label1.Text = dateTimePicker1.Text;
+            this.label1.Text = this.dateTimePicker1.Text;
         }
     }
 }
