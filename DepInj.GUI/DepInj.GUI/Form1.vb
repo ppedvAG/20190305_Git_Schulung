@@ -3,9 +3,6 @@ Imports System.Reflection
 Imports Contracts
 
 
-
-
-
 Public Class Form1
 
     Dim derMacher As IMachWas = Nothing
@@ -23,7 +20,7 @@ Public Class Form1
         Dim ass = Assembly.LoadFile(filepath)
         Dim target = ass.GetTypes().FirstOrDefault(Function(p) GetType(IMachWas).IsAssignableFrom(p))
 
-        derMacher = Activator.CreateInstance(target)
+        derMacher = CType(Activator.CreateInstance(target), IMachWas)
 
 
     End Sub
